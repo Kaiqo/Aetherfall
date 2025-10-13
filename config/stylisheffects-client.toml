@@ -3,7 +3,7 @@
 
 	[renderers.inventory_renderer]
 		#Prevent status effects with infinite duration from showing.
-		hide_infinite_effects = false
+		hide_infinite_effects = true
 		#Show a tooltip when hovering over an effect widget.
 		hovering_tooltip = true
 		#Minimum screen border distance for effect widgets.
@@ -27,7 +27,7 @@
 		#Range: 1.0 ~ 12.0
 		scale = 4.0
 		#Respect vanilla's "hideParticles" flag which prevents a status effect from showing when set via commands.
-		respect_hide_particles = false
+		respect_hide_particles = true
 		#Exclude certain menus from showing active status effects. Useful when effect icons overlap with other screen elements.
 		menu_blacklist = ["curios:curios_container", "tconstruct:*", "mekanism:*"]
 		#Maximum amount of status effects rendered in a single column.
@@ -41,11 +41,11 @@
 		allow_fallback = true
 		#Screen side to render status effects on.
 		#Allowed Values: LEFT, RIGHT
-		screen_side = "LEFT"
+		screen_side = "RIGHT"
 		#Effect renderer to be used.
 		#This setting might not be respected when not enough screen space is available. To force this setting disable "allow_fallback".
 		#Allowed Values: NONE, GUI_SMALL, GUI_COMPACT, INVENTORY_COMPACT, INVENTORY_FULL_SIZE
-		renderer_type = "GUI_COMPACT"
+		renderer_type = "INVENTORY_COMPACT"
 
 	[renderers.gui_renderer]
 		#Prevent status effects with infinite duration from showing.
@@ -98,7 +98,7 @@
 		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
 		quality_border = false
 		#Hide infinite symbol shown for an effect duration that is too long to fit.
-		hide_infinite_duration = false
+		hide_infinite_duration = true
 		#Show duration for ambient effects.
 		ambient_duration = false
 		#Display effect duration more compact, allows for always showing duration, even when it is very long.
